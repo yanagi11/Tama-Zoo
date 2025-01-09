@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D132</title>
+    <style>
+        body {
+            background-image: url("img/bird.jpg");
+            background-size: 1600px 1200px;
+            max-width: contain;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: white;
+            margin: auto;
+            text-align: center;
+            font-size: 100px;
+        }
+
+        .box {
+            position: relative;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            background-color: seagreen;
+            border-radius: 30px;
+            color: #fff;
+            text-align: center;
+            margin: auto;
+            font-size: 30px;
+            bottom: 0;
+        }
+
+        .breadcrumb {
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+        }
+
+            .breadcrumb li {
+                position: relative;
+                display: inline-block;
+                /*â°Ç…ï¿Ç‘ÇÊÇ§Ç…*/
+                list-style: none;
+                font-weight: bold;
+                /*ëæéö*/
+                margin-right: 0.8em;
+            }
+
+                .breadcrumb li:after {
+                    /*éOäpÇÃïîï™*/
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    border-style: solid;
+                    border-color: transparent;
+                    border-left-color: pink;
+                    /*îwåiêF*/
+                    border-width: 14px 12px;
+                    width: 0;
+                    height: 0;
+                }
+
+                .breadcrumb li a {
+                    display: inline-block;
+                    padding: 0 3px 0 7px;
+                    height: 28px;
+                    line-height: 28px;
+                    text-decoration: none;
+                    color: #747772;
+                    background: pink;
+                    /*îwåiêF*/
+                    font-size: 13px;
+                }
+
+                    .breadcrumb li a:hover {
+                        color: #FFF;
+                    }
+
+        .maps {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tama Zoo</h1>
+    <div class="box">
+        <a href="index.html">Top</a>
+    </div>
+
+    <div>
+        <ol class="breadcrumb" itemscope itemtype="https://yanagi11.github.io/Tama-Zoo/">
+            <li itemprop="itemListElement" itemscope itemtype="https://yanagi11.github.io/Tama-Zoo//">
+                <a itemprop="item" href="index.html"><span itemprop="name">Top</span></a>
+                <meta itemprop="positeion" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://yanagi11.github.io/Tama-Zoo//">
+                <a itemprop="item" href="Red panda.html"><span itemprop="name">Red panda</span></a>
+                <meta itemprop="positeion" content="2" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://yanagi11.github.io/Tama-Zoo//">
+                <a itemprop="item" href="guinea pig.html"><span itemprop="name">Guinea pig</span></a>
+                <meta itemprop="positeion" content="3" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://yanagi11.github.io/Tama-Zoo//">
+                <a itemprop="item" href="map.html"><span itemprop="name">map</span></a>
+                <meta itemprop="positeion" content="4" />
+            </li>
+
+        </ol>
+    </div>
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.110660026062!2d139.4006605762505!3d35.64964513170764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e2583ad7889f%3A0x5e4ecc1e62a0284!2z5aSa5pGp5YuV54mp5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1734710519346!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</body>
+</html>
